@@ -19,3 +19,25 @@
 .animate-pop {
   animation: pop-fragment 0.4s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 }
+
+/* Premium Background Animation */
+@keyframes premium-gradient {
+	0% { background-position: 0% 50%; }
+	50% { background-position: 100% 50%; }
+	100% { background-position: 0% 50%; }
+}
+
+.bg-premium-animate {
+	background: linear-gradient(-45deg, #ff758c, #ff7eb3, #ffb199, #f6416c);
+	background-size: 400% 400%;
+	animation: premium-gradient 15s ease infinite;
+}
+
+/* Glassmorphism Card Overlay */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 10px 40px 0 rgba(255, 80, 120, 0.3);
+}

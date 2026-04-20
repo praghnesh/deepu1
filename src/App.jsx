@@ -132,15 +132,15 @@ export default function App() {
 
   if (yesPressed) {
     return (
-      <div className="flex h-screen w-screen flex-col items-center justify-center bg-gradient-to-br from-pink-200 to-red-300 font-sans p-4 overflow-hidden relative">
+      <div className="flex h-screen w-screen flex-col items-center justify-center bg-premium-animate font-sans p-6 overflow-hidden relative">
         <FloatingHearts />
-        <div className="z-10 flex flex-col items-center animate-in zoom-in duration-700 transition-all">
+        <div className="z-10 flex flex-col items-center animate-in zoom-in duration-700 transition-all glass-panel p-10 rounded-3xl">
           <img 
             src="https://media.tenor.com/gUiu1zyxfzYAAAAi/bear-kiss-bear-kisses.gif" 
             alt="Cute hugging couple" 
-            className="rounded-2xl shadow-xl max-w-[90%] md:w-80 h-auto mb-8"
+            className="rounded-2xl shadow-2xl max-w-[90%] md:w-80 h-auto mb-8 transition-transform hover:scale-105 duration-500"
           />
-          <h1 className="text-4xl md:text-5xl font-extrabold text-red-600 drop-shadow-md text-center">
+          <h1 className="text-4xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-pink-500 drop-shadow-sm text-center tracking-tight">
             Love you too ❤️🥰😍
           </h1>
         </div>
@@ -149,10 +149,10 @@ export default function App() {
   }
 
   return (
-    <div className="flex h-screen w-screen flex-col items-center justify-center bg-gradient-to-br from-pink-100 to-red-200 font-sans p-4 overflow-hidden relative">
+    <div className="flex h-screen w-screen flex-col items-center justify-center bg-premium-animate font-sans p-4 overflow-hidden relative">
       <FloatingHearts />
-      <div className="z-10 flex flex-col items-center text-center max-w-2xl px-4 w-full">
-        <h1 className="text-3xl md:text-5xl font-extrabold text-red-500 drop-shadow-sm mb-12 duration-300">
+      <div className="z-10 flex flex-col items-center text-center max-w-2xl px-8 py-12 w-full glass-panel rounded-3xl animate-in fade-in zoom-in duration-[800ms]">
+        <h1 className="text-4xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-rose-600 drop-shadow-sm mb-12 duration-300 leading-tight">
           Will you be my Valentine kutti? 🫣🥺❤️😘
         </h1>
         
