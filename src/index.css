@@ -39,11 +39,11 @@
 }
 
 .bg-premium-animate {
-	background-image: linear-gradient(rgba(40, 0, 20, 0.6), rgba(30, 0, 15, 0.7)), url('https://images.unsplash.com/photo-1518199266791-5375a83190b7?q=80&w=2000&auto=format&fit=crop');
+	background-image: linear-gradient(rgba(45, 0, 15, 0.4), rgba(40, 0, 20, 0.5)), url('https://media.tenor.com/DcdhR-bIB0kAAAAC/ocean-waves-sunset.gif');
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
-	animation: bg-pulse 15s ease infinite alternate;
+	animation: bg-pulse 20s linear infinite alternate;
 }
 
 @keyframes bg-pulse {

@@ -148,7 +148,7 @@ export default function App() {
             className="rounded-2xl shadow-2xl max-w-[90%] md:w-80 h-auto mb-8 transition-transform hover:scale-105 duration-500"
           />
           <h1 className="text-4xl md:text-6xl font-bold tracking-wide text-red-600 drop-shadow-md text-center">
-            Love you too ❤️🥰😍
+            Love you too <span className="font-normal inline-block" style={{ fontFamily: '"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", emoji' }}>❤️🥰😍</span>
           </h1>
         </div>
       </div>
@@ -160,7 +160,7 @@ export default function App() {
       <FloatingHearts />
       <div className="z-10 flex flex-col items-center text-center max-w-2xl px-8 py-12 w-full glass-panel rounded-3xl animate-in fade-in zoom-in duration-[800ms]">
         <h1 className="text-4xl md:text-6xl font-bold tracking-wide text-red-600 drop-shadow-md mb-12 duration-300 leading-tight">
-          Will you be my Valentine kutty? 🫣🥺❤️😘
+          Will you be my Valentine kutty? <span className="font-normal inline-block whitespace-nowrap" style={{ fontFamily: '"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", emoji' }}>🫣🥺😘❤️</span>
         </h1>
         
         <div className="flex flex-col items-center justify-center gap-6 w-full relative h-[150px]">
