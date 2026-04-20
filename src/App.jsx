@@ -147,7 +147,7 @@ export default function App() {
             alt="Cute hugging couple" 
             className="rounded-2xl shadow-2xl max-w-[90%] md:w-80 h-auto mb-8 transition-transform hover:scale-105 duration-500"
           />
-          <h1 className="text-4xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-pink-500 drop-shadow-sm text-center tracking-tight">
+          <h1 className="text-4xl md:text-6xl font-bold tracking-wide text-red-600 drop-shadow-md text-center">
             Love you too ❤️🥰😍
           </h1>
         </div>
@@ -159,7 +159,7 @@ export default function App() {
     <div className="flex h-screen w-screen flex-col items-center justify-center bg-premium-animate font-sans p-4 overflow-hidden relative">
       <FloatingHearts />
       <div className="z-10 flex flex-col items-center text-center max-w-2xl px-8 py-12 w-full glass-panel rounded-3xl animate-in fade-in zoom-in duration-[800ms]">
-        <h1 className="text-4xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-rose-600 drop-shadow-sm mb-12 duration-300 leading-tight">
+        <h1 className="text-4xl md:text-6xl font-bold tracking-wide text-red-600 drop-shadow-md mb-12 duration-300 leading-tight">
           Will you be my Valentine kutty? 🫣🥺❤️😘
         </h1>
         
