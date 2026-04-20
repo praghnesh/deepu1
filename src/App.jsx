@@ -136,9 +136,9 @@ export default function App() {
         <FloatingHearts />
         <div className="z-10 flex flex-col items-center animate-in zoom-in duration-700 transition-all glass-panel p-10 rounded-3xl">
           <img 
-            src="https://media.tenor.com/gOtS9Y4oX2MAAAAi/milk-mocha.gif" 
+            src="https://i.giphy.com/ZQN9js7pSYL65YyG7O.gif" 
             alt="Cute hugging couple" 
-            className="rounded-2xl shadow-2xl max-w-[90%] md:w-80 h-auto mb-8 transition-transform hover:scale-105 duration-500"
+            className="rounded-2xl shadow-2xl max-w-[90%] w-64 md:w-80 h-auto min-h-[200px] mb-8 transition-transform hover:scale-105 duration-500 object-cover"
           />
           <h1 className="text-4xl md:text-6xl font-bold tracking-wide text-red-600 drop-shadow-md text-center">
             Love you too <span className="font-normal inline-block" style={{ fontFamily: '"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", emoji' }}>❤️🥰😍</span>
