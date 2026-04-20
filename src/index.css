@@ -1,25 +1,14 @@
 @import "tailwindcss";
 
 @keyframes float {
-  0% { transform: translateY(10vh) scale(0.8) translateX(0px); opacity: 0; }
-  10% { opacity: 0.9; }
-  90% { opacity: 0.9; }
-  100% { transform: translateY(-110vh) scale(1.2) translateX(30px); opacity: 0; }
+  0% { transform: translateY(10vh) scale(0.8); opacity: 0; }
+  10% { opacity: 0.8; }
+  90% { opacity: 0.8; }
+  100% { transform: translateY(-110vh) scale(1.2); opacity: 0; }
 }
 
 .animate-float {
-  animation: float 6s ease-in forwards;
-}
-
-@keyframes roll {
-  0% { transform: translateX(-10vw) rotate(0deg) translateY(0); opacity: 0; }
-  10% { opacity: 1; }
-  90% { opacity: 1; }
-  100% { transform: translateX(110vw) rotate(1080deg) translateY(20vh); opacity: 0; }
-}
-
-.animate-roll {
-  animation: roll 8s linear forwards;
+  animation: float 6s linear forwards;
 }
 
 @keyframes pop-fragment {
@@ -39,16 +28,9 @@
 }
 
 .bg-premium-animate {
-	background-image: linear-gradient(rgba(45, 0, 15, 0.4), rgba(40, 0, 20, 0.5)), url('https://media.tenor.com/DcdhR-bIB0kAAAAC/ocean-waves-sunset.gif');
-	background-size: cover;
-	background-position: center;
-	background-attachment: fixed;
-	animation: bg-pulse 20s linear infinite alternate;
-}
-
-@keyframes bg-pulse {
-  0% { transform: scale(1); }
-  100% { transform: scale(1.05); }
+	background: linear-gradient(-45deg, #ff758c, #ff7eb3, #ffb199, #f6416c);
+	background-size: 400% 400%;
+	animation: premium-gradient 15s ease infinite;
 }
 
 /* Glassmorphism Card Overlay */

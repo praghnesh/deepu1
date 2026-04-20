@@ -14,13 +14,11 @@ const FloatingHearts = () => {
             left: Math.random() * 90 + 5, 
             animationDuration: Math.random() * 3 + 4,
             fontSize: Math.random() * 15 + 15,
-            isRolling: Math.random() > 0.5,
-            top: Math.random() * 80 + 10,
           }
         ];
-        return newHearts.slice(-40); 
+        return newHearts.slice(-25); 
       });
-    }, 300);
+    }, 500);
     return () => clearInterval(interval);
   }, []);
 
@@ -29,14 +27,9 @@ const FloatingHearts = () => {
       {hearts.map((heart) => (
         <div
           key={heart.id}
-          className={`absolute ${heart.isRolling ? 'animate-roll' : 'animate-float'} text-red-500 opacity-90`}
-          style={heart.isRolling ? {
-            top: `${heart.top}%`,
-            animationDuration: `${heart.animationDuration * 1.5}s`,
-            fontSize: `${heart.fontSize * 1.5}px`
-          } : {
+          className="animate-float absolute bottom-0 text-red-500 opacity-80"
+          style={{
             left: `${heart.left}%`,
-            bottom: '0',
             animationDuration: `${heart.animationDuration}s`,
             fontSize: `${heart.fontSize}px`
           }}
@@ -143,7 +136,7 @@ export default function App() {
         <FloatingHearts />
         <div className="z-10 flex flex-col items-center animate-in zoom-in duration-700 transition-all glass-panel p-10 rounded-3xl">
           <img 
-            src="https://media.tenor.com/gUiu1zyxfzYAAAAi/bear-kiss-bear-kisses.gif" 
+            src="https://media.tenor.com/gOtS9Y4oX2MAAAAi/milk-mocha.gif" 
             alt="Cute hugging couple" 
             className="rounded-2xl shadow-2xl max-w-[90%] md:w-80 h-auto mb-8 transition-transform hover:scale-105 duration-500"
           />
