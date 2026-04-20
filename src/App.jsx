@@ -14,11 +14,13 @@ const FloatingHearts = () => {
             left: Math.random() * 90 + 5, 
             animationDuration: Math.random() * 3 + 4,
             fontSize: Math.random() * 15 + 15,
+            isRolling: Math.random() > 0.5,
+            top: Math.random() * 80 + 10,
           }
         ];
-        return newHearts.slice(-25); 
+        return newHearts.slice(-40); 
       });
-    }, 500);
+    }, 300);
     return () => clearInterval(interval);
   }, []);
 
@@ -27,9 +29,14 @@ const FloatingHearts = () => {
       {hearts.map((heart) => (
         <div
           key={heart.id}
-          className="animate-float absolute bottom-0 text-red-500 opacity-80"
-          style={{
+          className={`absolute ${heart.isRolling ? 'animate-roll' : 'animate-float'} text-red-500 opacity-90`}
+          style={heart.isRolling ? {
+            top: `${heart.top}%`,
+            animationDuration: `${heart.animationDuration * 1.5}s`,
+            fontSize: `${heart.fontSize * 1.5}px`
+          } : {
             left: `${heart.left}%`,
+            bottom: '0',
             animationDuration: `${heart.animationDuration}s`,
             fontSize: `${heart.fontSize}px`
           }}
@@ -153,7 +160,7 @@ export default function App() {
       <FloatingHearts />
       <div className="z-10 flex flex-col items-center text-center max-w-2xl px-8 py-12 w-full glass-panel rounded-3xl animate-in fade-in zoom-in duration-[800ms]">
         <h1 className="text-4xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-rose-600 drop-shadow-sm mb-12 duration-300 leading-tight">
-          Will you be my Valentine kutti? 🫣🥺❤️😘
+          Will you be my Valentine kutty? 🫣🥺❤️😘
         </h1>
         
         <div className="flex flex-col items-center justify-center gap-6 w-full relative h-[150px]">
