@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@keyframes float {
+  0% { transform: translateY(10vh) scale(0.8); opacity: 0; }
+  10% { opacity: 0.8; }
+  90% { opacity: 0.8; }
+  100% { transform: translateY(-110vh) scale(1.2); opacity: 0; }
+}
+
+.animate-float {
+  animation: float 6s linear forwards;
+}
+
+@keyframes pop-fragment {
+  0% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+  100% { transform: var(--pop-translate) scale(0); opacity: 0; }
+}
+
+.animate-pop {
+  animation: pop-fragment 0.4s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
