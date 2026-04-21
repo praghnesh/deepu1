@@ -136,7 +136,7 @@ export default function App() {
         <FloatingHearts />
         <div className="z-10 flex flex-col items-center animate-in zoom-in duration-700 transition-all glass-panel p-10 rounded-3xl">
           <img 
-            src="https://i.giphy.com/ZQN9js7pSYL65YyG7O.gif" 
+            src="https://media.tenor.com/gUiu1zyxfzYAAAAi/bear-kiss-bear-kisses.gif" 
             alt="Cute hugging couple" 
             className="rounded-2xl shadow-2xl max-w-[90%] w-64 md:w-80 h-auto min-h-[200px] mb-8 transition-transform hover:scale-105 duration-500 object-cover"
           />
