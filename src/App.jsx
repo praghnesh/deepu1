@@ -136,7 +136,7 @@ export default function App() {
         <FloatingHearts />
         <div className="z-10 flex flex-col items-center animate-in zoom-in duration-700 transition-all glass-panel p-10 rounded-3xl">
           <img 
-            src="https://media.tenor.com/vzkveVGDzmAAAAAi/dudu-hug-bubu-dudu-kiss.gif" 
+            src="/bubu-dudu.gif" 
             alt="Bubu Dudu hug kiss" 
             className="rounded-2xl shadow-2xl w-full max-w-sm h-auto mb-8 transition-transform hover:scale-105 duration-500"
           />
