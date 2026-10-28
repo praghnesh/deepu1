@@ -153,7 +153,7 @@ export default function App() {
       <FloatingHearts />
       <div className="z-10 flex flex-col items-center text-center max-w-2xl px-8 py-12 w-full glass-panel rounded-3xl animate-in fade-in zoom-in duration-[800ms]">
         <h1 className="text-4xl md:text-6xl font-bold tracking-wide text-red-600 drop-shadow-md mb-12 duration-300 leading-tight">
-          Will you be my friend Ramani? <span className="font-normal inline-block whitespace-nowrap" style={{ fontFamily: '"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", emoji' }}>🫣🥺🤝❤️</span>
+          Will you be my friend Kushalya? <span className="font-normal inline-block whitespace-nowrap" style={{ fontFamily: '"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", emoji' }}>🫣🥺🤝❤️</span>
         </h1>
         
         <div className="flex flex-col items-center justify-center gap-6 w-full relative h-[150px]">
